@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 195 100% 55%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 47% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 195 100% 55%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 195 100% 55%;
+
+    --radius: 0.5rem;
+
+    /* Elegant Cybersecurity theme */
+    --cyber-primary: 195 100% 55%;
+    --cyber-primary-glow: 195 100% 70%;
+    --cyber-secondary: 160 85% 50%;
+    --cyber-dark: 222 47% 6%;
+    --cyber-card: 222 47% 8%;
+    --cyber-border: 222 47% 15%;
+    --cyber-accent: 280 70% 65%;
+    
+    /* Professional gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-primary)) 0%, hsl(var(--cyber-secondary)) 100%);
+    --gradient-cyber-subtle: linear-gradient(180deg, hsl(var(--cyber-dark)) 0%, hsl(var(--cyber-card)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--cyber-primary)) 0%, hsl(var(--cyber-accent)) 100%);
+    
+    /* Elegant shadows and glows */
+    --shadow-cyber: 0 20px 50px -12px hsl(var(--cyber-primary) / 0.25);
+    --shadow-cyber-lg: 0 30px 60px -15px hsl(var(--cyber-primary) / 0.3);
+    --glow-cyber: 0 0 30px hsl(var(--cyber-primary) / 0.4);
+    --glow-subtle: 0 0 20px hsl(var(--cyber-primary) / 0.2);
+    
+    /* Animations - Optimized for speed */
+    --transition-cyber: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 220 26% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 220 26% 8%;
+    --sidebar-accent: 220 26% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 26% 18%;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 195 100% 55%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 222 47% 12%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 195 100% 55%;
+    --accent-foreground: 222 47% 6%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 195 100% 55%;
+    --sidebar-background: 220 26% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 220 26% 8%;
+    --sidebar-accent: 220 26% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 26% 18%;
+    --sidebar-ring: 195 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .shadow-cyber {
+    box-shadow: var(--shadow-cyber);
+  }
+  
+  .shadow-cyber-lg {
+    box-shadow: var(--shadow-cyber-lg);
+  }
+  
+  .glow-cyber {
+    box-shadow: var(--glow-cyber);
+  }
+  
+  .glow-subtle {
+    box-shadow: var(--glow-subtle);
+  }
+  
+  .gradient-cyber {
+    background: var(--gradient-cyber);
+  }
+  
+  .gradient-cyber-subtle {
+    background: var(--gradient-cyber-subtle);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .transition-cyber {
+    transition: var(--transition-cyber);
+  }
+  
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+  
+  .border-cyber {
+    border: 1px solid hsl(var(--cyber-border));
+  }
+  
+  .border-cyber-glow {
+    border: 1px solid hsl(var(--cyber-primary) / 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0% { 
+    box-shadow: 0 0 10px hsl(var(--cyber-primary) / 0.3), 0 0 20px hsl(var(--cyber-primary) / 0.1);
+  }
+  100% { 
+    box-shadow: 0 0 20px hsl(var(--cyber-primary) / 0.6), 0 0 40px hsl(var(--cyber-primary) / 0.3), 0 0 60px hsl(var(--cyber-primary) / 0.1);
+  }
+}
