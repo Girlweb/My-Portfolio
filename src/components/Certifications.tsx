@@ -1,4 +1,4 @@
-import { Award, ExternalLink, Shield, Network, TrendingUp, Database } from "lucide-react";
+import { Award, ExternalLink, Shield, Network, TrendingUp, Database, Code2 } from "lucide-react";
 
 const Certifications = () => {
   const certifications = [
