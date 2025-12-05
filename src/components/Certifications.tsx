@@ -3,37 +3,64 @@ import { Award, ExternalLink, Shield, Network, TrendingUp, Database } from "luci
 const Certifications = () => {
   const certifications = [
     {
-      name: "Network Defense",
+      name: "Cisco Certified Network Associate (CCNA)",
       issuer: "Cisco Networking Academy",
-      date: "November 2024",
+      date: "2023",
       icon: <Network className="w-8 h-8 text-cyan-400" />,
-      credentialId: "Cisco-Network-Defense-2024",
-      link: "https://www.credly.com/users/mitchele-jebet/badges",
-      skills: ["Network Security", "Defense Strategies", "Security Architecture", "Threat Prevention"]
+      credentialId: "CCNA-2023",
+      link: "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html",
+      skills: ["Network Security", "Routing & Switching", "IP Connectivity", "Network Access"]
     },
     {
-      name: "Endpoint Security",
+      name: "ArcX Cyber Threat Intelligence (CTI) Specialist",
+      issuer: "ArcX",
+      date: "2024",
+      icon: <Shield className="w-8 h-8 text-purple-400" />,
+      credentialId: "ArcX-CTI-2024",
+      link: "https://www.credly.com/users/mitchele-jebet/badges",
+      skills: ["Threat Intelligence", "Malware Analysis", "Incident Response", "OSINT"]
+    },
+    {
+      name: "TryHackMe Pre-Security Learning Path",
+      issuer: "TryHackMe",
+      date: "2024",
+      icon: <Shield className="w-8 h-8 text-green-400" />,
+      credentialId: "THM-850TRUZ5A3",
+      link: "https://tryhackme.com/",
+      skills: ["Network Security", "Linux Fundamentals", "Web Security", "Security Principles"]
+    },
+    {
+      name: "Cisco Endpoint Security Badge",
       issuer: "Cisco Networking Academy",
-      date: "July 2024",
+      date: "2025",
       icon: <Shield className="w-8 h-8 text-blue-400" />,
-      credentialId: "Cisco-Endpoint-Security-2024",
+      credentialId: "Cisco-Endpoint-2025",
       link: "https://www.credly.com/users/mitchele-jebet/badges",
       skills: ["Endpoint Protection", "Threat Detection", "Security Operations", "Incident Response"]
     },
     {
-      name: "Networking Devices and Initial Configuration",
+      name: "Network Defense Badge",
       issuer: "Cisco Networking Academy",
-      date: "February 2024",
-      icon: <Network className="w-8 h-8 text-purple-400" />,
-      credentialId: "Cisco-Networking-Devices-2024",
+      date: "2025",
+      icon: <Network className="w-8 h-8 text-red-400" />,
+      credentialId: "Cisco-Network-Defense-2025",
+      link: "https://www.credly.com/users/mitchele-jebet/badges",
+      skills: ["Network Security", "Defense Strategies", "Security Architecture", "Threat Prevention"]
+    },
+    {
+      name: "Networking Devices and Initial Configuration Badge",
+      issuer: "Cisco Networking Academy",
+      date: "2025",
+      icon: <Network className="w-8 h-8 text-indigo-400" />,
+      credentialId: "Cisco-Networking-Devices-2025",
       link: "https://www.credly.com/users/mitchele-jebet/badges",
       skills: ["Network Configuration", "Router Setup", "Switch Configuration", "Device Management"]
     },
     {
-      name: "Networking Basics",
+      name: "Networking Basics Badge",
       issuer: "Cisco Networking Academy",
-      date: "September 2024",
-      icon: <Network className="w-8 h-8 text-green-400" />,
+      date: "2024",
+      icon: <Network className="w-8 h-8 text-teal-400" />,
       credentialId: "Cisco-Networking-Basics-2024",
       link: "https://www.credly.com/users/mitchele-jebet/badges",
       skills: ["Network Fundamentals", "TCP/IP", "OSI Model", "Network Protocols"]
@@ -41,7 +68,7 @@ const Certifications = () => {
     {
       name: "Mastercard Cybersecurity Job Simulation",
       issuer: "Mastercard via Forage",
-      date: "December 2024",
+      date: "2025",
       icon: <Shield className="w-8 h-8 text-orange-400" />,
       credentialId: "cGeTsRDfdM7w39SrG",
       link: "https://www.theforage.com/achievements",
@@ -50,20 +77,11 @@ const Certifications = () => {
     {
       name: "Quantium Software Engineering Job Simulation",
       issuer: "Quantium via Forage",
-      date: "December 2024",
+      date: "2025",
       icon: <Code2 className="w-8 h-8 text-pink-400" />,
       credentialId: "vg2AxXKZwcKewQeRD",
       link: "https://www.theforage.com/simulations/quantium/software-engineering-j6ci",
       skills: ["Dash Application Development", "Python Testing", "UI/UX Design", "Bash Scripting"]
-    },
-    {
-      name: "TryHackMe Pre-Security Learning Path",
-      issuer: "TryHackMe",
-      date: "2024",
-      icon: <Shield className="w-8 h-8 text-red-400" />,
-      credentialId: "THM-850TRUZ5A3",
-      link: "https://tryhackme.com/",
-      skills: ["Network Security", "Linux Fundamentals", "Web Security", "Security Principles"]
     }
   ];
 
