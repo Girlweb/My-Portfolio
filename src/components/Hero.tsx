@@ -25,7 +25,7 @@ const Hero = () => {
           {/* Content */}
           <div className="flex-1 text-center">
             <Badge variant="secondary" className="mb-4 animate-pulse-glow">
-               Cybersecurity Analyst
+               Cybersecurity Analyst | Incident Response & Security Automation
             </Badge>
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 gradient-cyber bg-clip-text text-transparent">
