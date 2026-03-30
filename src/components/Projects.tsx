@@ -22,7 +22,7 @@ const Projects = () => {
         "Mobile-First Responsive Design"
       ],
       github: "https://github.com/Girlweb/freelance-tracker",
-      demo: null,
+      demo: "https://freelance-tracker-qayl.vercel.app/",
       icon: <DollarSign className="w-6 h-6" />,
       color: "from-green-400 to-emerald-400"
     },
