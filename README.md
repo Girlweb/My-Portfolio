@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing my cybersecurity expertise, projects, and certifications.
 
 ## About
-Cybersecurity Analyst specializing in network security, threat detection, and endpoint protection. Currently on academic break with 20-30+ hours weekly availability.
+Security engineer building AI-powered detection systems and open source security tooling. I develop production SOAR platforms, discover CVE-class vulnerabilities in AI agent frameworks, and integrate large language models into enterprise security operations — combining software engineering depth with hands-on blue team experience to build security tools that actually work in the real world.
 
 ## Built With
 - **Frontend**: React 18, TypeScript
