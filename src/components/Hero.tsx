@@ -25,7 +25,7 @@ const Hero = () => {
           {/* Content */}
           <div className="flex-1 text-center">
             <Badge variant="secondary" className="mb-4 animate-pulse-glow">
-              🔒 Cybersecurity Analyst
+               Cybersecurity Analyst
             </Badge>
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 gradient-cyber bg-clip-text text-transparent">
@@ -59,9 +59,9 @@ const Hero = () => {
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Detail-oriented cybersecurity analyst with expertise in network security, endpoint protection, and threat detection. 
-              Currently on academic break with 20-30+ hours weekly availability. 
-              Combining electrical engineering analytical skills with cybersecurity certifications for comprehensive security analysis.
+              Security engineer building AI-powered detection systems and open source security tooling.
+              I develop production SOAR platforms, discover CVE-class vulnerabilities in AI agent frameworks
+              and integrate large language models into enterprise security operations — combining software engineering depth with hands-on blue team experience.
             </p>
             
             
