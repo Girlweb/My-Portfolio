@@ -27,6 +27,30 @@ const Projects = () => {
       color: "from-green-400 to-emerald-400"
     },
     {
+      title: "ADS Framework SOAR Platform",
+      description: "Open source Security Orchestration, Automation and Response platform built to eliminate alert fatigue in Security Operations Centers. Reduces false positives by 84% and cuts mean time to respond from 4 hours to under 15 minutes.",
+      longDescription: "Commercial SOAR platforms cost hundreds of thousands of dollars annually. This platform delivers the same capability for any organisation — combining real-time threat enrichment, ML-powered alert prioritisation, and automated playbook execution in a single open source pipeline. Implements Palantir's Alerting and Detection Strategy Framework with full MITRE ATT&CK mapping.",
+      tech: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "Scikit-learn", "VirusTotal API", "MITRE ATT&CK"],
+      features: [
+        "Universal connector framework ingesting alerts from any security tool",
+        "Real-time enrichment via VirusTotal API checking IPs, domains and file hashes across 94 security engines",
+        "Random Forest ML model ranking every alert by danger level for analyst prioritisation",
+        "Automated playbook engine executing incident response in milliseconds — notifications, ticketing, IP blocking",
+        "Palantir Alerting and Detection Strategy Framework — 9-stage methodology for high quality detection rules",
+        "Full MITRE ATT&CK framework mapping for every detection rule"
+      ],
+      metrics: [
+        "84% False Positive Reduction",
+        "4 Hours → Under 15 Minutes MTTR",
+        "10x More Alerts Per Analyst",
+        "94 Security Engines via VirusTotal"
+      ],
+      github: "https://github.com/Girlweb",
+      demo: "https://ads-soar-platform.onrender.com",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-purple-400 to-pink-400"
+    },
+    {
       title: "LinkedIn Post Generator",
       description: "Production-ready generative AI application processing 1000+ user requests. Engineered sophisticated prompt framework with 95% user satisfaction.",
       longDescription: "Architected using LangChain, Llama3.3 (70B), and Groq Cloud API. Implemented robust API authentication, rate limiting, and comprehensive error handling.",
@@ -48,29 +72,6 @@ const Projects = () => {
       demo: null,
       icon: <Code2 className="w-6 h-6" />,
       color: "from-blue-400 to-purple-400"
-    },
-    {
-      title: "AI-Powered Fraud Detection System",
-      description: "ML-based fraud detection achieving 99% accuracy across 50,000+ transactions. Built supervised learning pipeline with Random Forest and XGBoost classifiers.",
-      longDescription: "Engineered 25+ features including temporal patterns, transaction velocity, and behavioral signatures. Achieved 40% reduction in false positive rate through cross-validation.",
-      tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "XGBoost", "Machine Learning"],
-      features: [
-        "99% accuracy in anomaly detection",
-        "Random Forest & XGBoost ensemble methods",
-        "25+ engineered features from raw data",
-        "Automated alerting with JSON/CSV reports",
-        "Cross-validation & hyperparameter tuning"
-      ],
-      metrics: [
-        "99% Detection Accuracy",
-        "50,000+ Transactions Analyzed",
-        "40% False Positive Reduction",
-        "25+ Engineered Features"
-      ],
-      github: "https://github.com/Girlweb/ai-data-annotation-tool",
-      demo: null,
-      icon: <Shield className="w-6 h-6" />,
-      color: "from-purple-400 to-pink-400"
     },
     {
       title: "DevSecOps Security Assessment Platform",
@@ -174,7 +175,6 @@ const Projects = () => {
 
               {/* Features & Metrics Grid */}
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                {/* Features */}
                 <div>
                   <p className="text-xs text-muted-foreground mb-3 font-semibold">KEY FEATURES</p>
                   <ul className="space-y-2">
@@ -187,7 +187,6 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                {/* Metrics */}
                 <div>
                   <p className="text-xs text-muted-foreground mb-3 font-semibold">IMPACT & METRICS</p>
                   <div className="space-y-3">
@@ -228,13 +227,11 @@ const Projects = () => {
                 )}
               </div>
 
-              {/* Hover Border Effect */}
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-cyan-400/0 via-cyan-400/5 to-purple-400/0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
           ))}
         </div>
 
-        {/* View More on GitHub */}
         <div className="text-center mt-12">
           <a
             href="https://github.com/Girlweb"
