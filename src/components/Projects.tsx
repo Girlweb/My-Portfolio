@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: "ADS Framework SOAR Platform",
       description: "Open source Security Orchestration, Automation and Response platform built to eliminate alert fatigue in Security Operations Centers. Reduces false positives by 84% and cuts mean time to respond from 4 hours to under 15 minutes.",
-      longDescription: "Commercial SOAR platforms cost hundreds of thousands of dollars annually. This platform delivers the same capability for any organisation — combining real-time threat enrichment, ML-powered alert prioritisation, and automated playbook execution in a single open source pipeline. Implements Palantir's Alerting and Detection Strategy Framework with full MITRE ATT&CK mapping.",
+      longDescription: "Commercial SOAR platforms cost hundreds of thousands of dollars annually. This platform delivers the same capability for any organisation — combining real-time threat enrichment via the VirusTotal API, ML-powered alert prioritisation using a Random Forest classifier, and automated playbook execution in a single open source pipeline. Implements Palantir's Alerting and Detection Strategy Framework with full MITRE ATT&CK mapping.",
       tech: ["Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "Scikit-learn", "VirusTotal API", "MITRE ATT&CK"],
       features: [
         "Universal connector framework ingesting alerts from any security tool",
@@ -45,8 +45,8 @@ const Projects = () => {
         "10x More Alerts Per Analyst",
         "94 Security Engines via VirusTotal"
       ],
-      github: "https://github.com/Girlweb",
-      demo: "https://ads-soar-platform.onrender.com",
+      github: "https://github.com/Girlweb/ads-framework-platform",
+      demo: "https://ads-soar-platform.onrender.com/docs",
       icon: <Shield className="w-6 h-6" />,
       color: "from-purple-400 to-pink-400"
     },
