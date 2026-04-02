@@ -75,6 +75,15 @@ const Certifications = () => {
       skills: ["Security Design", "Risk Assessment", "Threat Modeling", "Incident Response"]
     },
     {
+      name: "Certified Cybersecurity Educator Professional (CCEP)",
+      issuer: "Red Team Leaders",
+      date: "2026",
+      icon: <Award className="w-8 h-8 text-red-400" />,
+      credentialId: "15e102af5bde0900",
+      link: "https://courses.redteamleaders.com/exam-completion/15e102af5bde0900",
+      skills: ["Cybersecurity Education", "Security Awareness", "Threat Intelligence", "Security Communication"]
+    },
+    {
       name: "Quantium Software Engineering Job Simulation",
       issuer: "Quantium via Forage",
       date: "2025",
