@@ -84,6 +84,24 @@ const Certifications = () => {
       skills: ["Cybersecurity Education", "Security Awareness", "Threat Intelligence", "Security Communication"]
     },
     {
+      name: "Network and Computer Systems Administrator",
+      issuer: "micro1",
+      date: "April 2026",
+      icon: <Network className="w-8 h-8 text-lime-400" />,
+      credentialId: "micro1-NCSA-April-2026",
+      link: "https://micro1.ai/apply-as-talent",
+      skills: ["Network Administration", "Computer Systems Management", "AI Interview Certified", "Systems Administration"]
+    },
+    {
+      name: "Kenya Tech Frontiers: Pathways for a Virtual Workforce 2026",
+      issuer: "U.S. Embassy Kenya & American Spaces",
+      date: "2026",
+      icon: <Award className="w-8 h-8 text-blue-300" />,
+      credentialId: "KTF-USEmbassy-2026",
+      link: "https://ke.usembassy.gov",
+      skills: ["Remote Work Operations", "U.S. Market Compliance", "Digital Trade", "Virtual Workforce"]
+    },
+    {
       name: "Quantium Software Engineering Job Simulation",
       issuer: "Quantium via Forage",
       date: "2025",
