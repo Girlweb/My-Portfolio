@@ -82,7 +82,7 @@ mitchele-jebet-cyber-shield/
 - **Embla Carousel**: Smooth carousel implementation
 
 ## Live Demo
-[View Portfolio](https://mitchelejebet.dev) *(Add your domain when deployed)*
+[View Portfolio](https://mitchelejebet.dev)
 
 ## Contact
 - **Email**: jebetmichele@gmail.com
