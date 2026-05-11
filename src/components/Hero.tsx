@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Linkedin, Github } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   const viewCV = () => {
@@ -12,29 +11,29 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark opacity-95" />
-      
+
       {/* Floating security icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Shield className="absolute top-20 left-10 text-cyber-primary/30 w-8 h-8 animate-float" style={{ animationDelay: '0s' }} />
         <Shield className="absolute top-40 right-20 text-cyber-secondary/30 w-6 h-6 animate-float" style={{ animationDelay: '2s' }} />
         <Shield className="absolute bottom-32 left-1/4 text-cyber-accent/30 w-10 h-10 animate-float" style={{ animationDelay: '4s' }} />
       </div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center gap-12">
           {/* Content */}
           <div className="flex-1 text-center">
             <Badge variant="secondary" className="mb-4 animate-pulse-glow">
-               Cybersecurity Analyst | Incident Response & Security Automation
+              🔒 Cybersecurity Analyst | Incident Response & Security Automation
             </Badge>
-            
+
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 gradient-cyber bg-clip-text text-transparent">
               Mitchele Jebet
             </h1>
-            
+
             {/* Social Links */}
             <div className="flex gap-4 justify-center mb-6">
-              <a 
+              <a
                 href="https://linkedin.com/in/mitchele-jebet"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,7 +42,7 @@ const Hero = () => {
               >
                 <Linkedin className="w-6 h-6 text-cyber-primary" />
               </a>
-              <a 
+              <a
                 href="https://github.com/Girlweb"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,17 +52,19 @@ const Hero = () => {
                 <Github className="w-6 h-6 text-cyber-primary" />
               </a>
             </div>
-            
+
             <p className="text-2xl lg:text-3xl text-muted-foreground mb-6">
-              Cybersecurity Analyst | Network Security & Threat Detection
+              Cybersecurity Analyst | Incident Response & Security Automation
             </p>
-            
+
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Security engineer building AI-powered detection systems and open source security tooling.
-              I have built production SOAR platforms, discovered CVE-class vulnerabilities in AI agent frameworks, and integrated large language models into enterprise security operations — combining software engineering depth with hands-on blue team experience.
+              Security engineer building AI-powered detection systems and open source
+              security tooling. I have built production SOAR platforms, discovered
+              CVE-class vulnerabilities in AI agent frameworks, and integrated large
+              language models into enterprise security operations — combining software
+              engineering depth with hands-on blue team experience.
             </p>
-            
-            
+
             {/* CTA Button */}
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="cyber" size="lg" className="animate-pulse-glow" onClick={viewCV}>
