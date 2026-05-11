@@ -60,8 +60,8 @@ const Hero = () => {
             
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
               Security engineer building AI-powered detection systems and open source security tooling.
-              I have built production SOAR platforms, discovered CVE-class vulnerabilities in AI agent frameworks, and integrated large language models into enterprise security operations.
-              >
+              I have built production SOAR platforms, discovered CVE-class vulnerabilities in AI agent frameworks, and integrated large language models into enterprise security operations — combining software engineering depth with hands-on blue team experience.
+            </p>
             
             
             {/* CTA Button */}
