@@ -3,6 +3,15 @@ import { Award, ExternalLink, Shield, Network, TrendingUp, Database, Code2 } fro
 const Certifications = () => {
   const certifications = [
     {
+      name: "Certified LLM Security Professional (CLLMSP)",
+      issuer: "Red Team Leaders",
+      date: "June 2026",
+      icon: <Shield className="w-8 h-8 text-violet-400" />,
+      credentialId: "7897efe47ce7100c",
+      link: "https://courses.redteamleaders.com/exam-completion/7897efe47ce7100c",
+      skills: ["LLM Security", "OWASP Top 10 for LLMs", "Jailbreak Defense", "MCP Security", "AI Agent Hardening", "AI Governance", "Incident Response"]
+    },
+    {
       name: "Cisco Certified Network Associate (CCNA)",
       issuer: "Cisco Networking Academy",
       date: "2023",
